@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Deep Dive</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  margin: 0;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url(https://pa1.narvii.com/6566/dba8eb7fb651ecbdb8523d01c7ac67efebd3d62b_hq.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 60px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #04182D;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #002F63;
+  color: whitesmoke;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: #152238;
+  padding: 22px;
+}
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: #203354;
+  padding: 7px;
+}
+
+.main h2 {
+    font-size: 30px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #04182D;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>DEEP DIVE</h1>
+  <p>All about fish and other marine life</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">News</a>
+  <a href="#">Wildlife</a>
+  <a href="#">Documentaries</a>
+  <a href="#" class="right">About</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Trending</h2>
+    <img src="https://i.dailymail.co.uk/1s/2021/11/08/15/50211283-10177957-image-a-6_1636384483581.jpg" alt="School of fish rubbing against a great" height="200px" width="383px">
+    <h4><a href="https://www.sciencedaily.com/releases/2021/11/211104162628.htm" style="text-decoration: none; color: whitesmoke;">Scientists Find Fish Rubbing Up Against Their Predators — Sharks</a></h4>
+    <hr style="height:7px;border-width:0;color:#04182D;background-color:#04182D">
+    <h2>Fun Facts</h2>
+    <img src="https://media.cntraveler.com/photos/5718f78980cf3e034f974595/16:9/w_2560%2Cc_limit/GettyImages-150968209.jpg" height="190px" width="383px">
+    <p>There are over 34,000 recognized species of fish around the world! (And Counting)</p>
+    <img src="https://oceana.org/sites/default/files/styles/lightbox_full/public/sailfish_encyclopedia_image_shutterstock_-_wildestanimal.jpg?itok=C_tU1KNo" height="190px" width="383px">
+    <p>The fastest fish is the sailfish. It can swim as fast as a car travels on the highway.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0V-e7y6FBVeZYyF38oI4nco-oLzqV5X6q29cxICVzwJmjPgtRS1r3_b2JpGZgcmd4qxM&usqp=CAU" height="190px" width="383px">
+    <p>Manta rays have the largest brain to body weight ratio of any living fish; giving it enough smarts to make the average dolphin jealous.</p>
+  </div>
+
+  <div class="main">
+    <h2>Glub Glub... Glub!</h2>
+    <img src="https://i.redd.it/frj6sici33qz.jpg" height="400px" width="574px" class="center">
+    <h3 style="padding-left: 20px">Fish, Fish, and more Fish!!</h3>
+    <p style="padding-left: 20px">Welcome to the magazine dedicated to all things that go glub underwater! Featuring many forms of marine life, you won't ever <br> be left gasping for more!</p>
+    <br>
+    <h2>Fish of The Month</h2>
+    <img src="https://cdn.britannica.com/85/96885-050-39C1A312/Tagging-project-fish-Pacific-Pelagics-seabirds-sea.jpg" height="400px" width="574px" class="center">
+    <h3 style="padding-left: 20px">This Month's Feature: The Ocean Sunfish</h3>
+    <p style="padding-left: 20px">Renowned for its flat, bony body and massive size, the ocean sunfish or common mola (mola-mola), deserved to be featured as this month's fish of the month. The species is native to tropical and temperate waters around the world. It resembles a fish head with a tail, and its main body is flattened laterally. Sunfish can be as tall as they are long when their dorsal and ventral fins are extended. </p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Copyright &copy; 2021 Deep Dive. All Rights Reserved </p>
+</div>
+
+</body>
+</html>
